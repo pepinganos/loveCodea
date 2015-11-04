@@ -64,6 +64,10 @@ function mesh:draw()
     self:_drawRectangles()
 end
 
+function mesh:clear()
+    self.rectlist = {}
+end
+
 function mesh:_textureToImage()
     if self.texture ~= self._oldtexture then
         if self.texture == nil then
